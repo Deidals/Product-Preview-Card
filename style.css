@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@400;700&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.attribution {
+    font-size: 11px; text-align: center;
+}
+.attribution a{
+    color: hsl(228, 45%, 44%);
+}
+
+html, body{
+    height: 100%;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: hsl(30, 38%, 92%);
+}
+
+#bigcontainer{
+    width: 330px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 1rem;
+    overflow: hidden;
+    line-height: 1.6;
+} 
+
+picture img{
+    border-radius: inherit;
+    width: 100%;
+    height: 100%;
+}
+
+h1{
+    color: hsl(228, 12%, 48%);
+    font-family: "Montserrat";
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin: 5px 20px;
+}
+
+h2{
+    font-family: "Fraunces";
+    color: hsl(212, 21%, 14%);
+    font-weight: 700;
+    line-height: 1;
+    font-size: 1.8rem;
+    margin: 10px 20px;
+}
+
+p{
+    font-family: "Montserrat";
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    margin: 5px 20px;
+    font-weight: 500;
+}
+
+span{
+    color: hsl(158, 36%, 37%);
+    font-size: 35px;
+    font-weight: 800;
+    font-family: "Fraunces";
+    margin: 5px 20px;
+    anchor-name: --al;
+}
+
+/* #smallcontainerone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} */
+
+button{
+    all: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    width: 80%;
+    padding: 15px;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    border-radius: 1rem;
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: 14px;
+    gap: 8px;
+}
+
+button:hover{
+    background-color: hsl(159, 35%, 19%);
+    cursor: pointer;
+}
+del{
+    color: hsl(228, 12%, 48%);
+    font-family: "Montserrat";
+    font-size: 13px;
+    position: absolute;
+    position-anchor: --al;
+    position-area: right;
+    margin-left: 15px;
+}
+
+@media screen and (min-width:1440px) {
+    #bigcontainer{
+        display: flex;
+        justify-content: space-between;
+        width: 540px;
+        font-size: large;
+        height: 500px;
+    }
+    #smallcontainerone{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 20px 10px;
+        width: 340px;
+    }
+    h2{
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    p{
+        font-size: 14px;
+    }
+    picture img{
+        height: 100%;
+        width: 100%;
+    }
+}
